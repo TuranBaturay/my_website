@@ -5,16 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
         <link rel="icon" type="image/x-icon" href="/icon.ico">
+        <script src="script.js"> defer</script>
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
         <div class="mosaic-container"></div>
         
         <div class="main">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2022854088&color=%232631bb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/baturay-511998332" title="Baturay" target="_blank" style="color: #cccccc; text-decoration: none;">Baturay</a> · <a href="https://soundcloud.com/baturay-511998332/same-as-always" title="Same As Always" target="_blank" style="color: #cccccc; text-decoration: none;">Same As Always</a></div>
-            <h1>Welcome to my Website!</h1>
-            <img src="duck.gif">
-
+            <div class="tabHeader">
+                <ul>
+                    <li data-tab-link="#home" class="active">Home</li>
+                    <li data-tab-link="#music">Music</li>
+                    <li data-tab-link="#drawing">Drawing</li>
+                </ul>
+            </div>
+            <div data-tab-content id="home" class="active">
+                <h1>Welcome ! </h1>
+            </div>
+            <div data-tab-content id="music">
+                <h1>Music</h1>
+                <div class="music">
+                    
+                </div>
+            </div>
+            <div data-tab-content id="drawing">
+                <h1>Drawing here</h1>
+            </div>
         </div>
 
     </body>
