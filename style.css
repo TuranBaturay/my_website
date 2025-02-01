@@ -1,0 +1,71 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   body {
+    margin: 0;
+    overflow: hidden;
+    background: black; /* Optional */
+}
+
+.mosaic-container {
+    position: fixed;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: url("duck.gif") repeat;
+    background-size: 200px 200px; /* Adjust size of each tile */
+    animation: scroll-bg 6s linear infinite;
+}
+
+/* Double the movement distance to create a seamless loop */
+@keyframes scroll-bg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px -400px; /* Must be double the background-size height */
+    }
+}
+
+
+.main{
+  background-color: rgb(109, 67, 208);
+  width: 50%;
+  height: 80vh;
+  padding: 3em;
+  border-radius: 2em;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;    /* centers vertically */
+  flex-direction: column;
+}
+
+.main h1{
+  text-align: center;
+  color: aliceblue;
+  font-size: 2em;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.main img{
+  transition: width 0.3s ease-in-out;
+
+  width: 50%;
+}
+
+.main img:hover{
+  transition: width 0.3s ease-in-out;
+
+  width: 55%;
+}
+
+.main h1:hover{
+  transition: font-size 0.3s ease-in-out;
+  font-size: 2.1em;
+
+}
